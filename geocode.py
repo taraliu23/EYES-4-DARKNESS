@@ -1,4 +1,3 @@
-
 import re
 import pandas as pd
 import requests
@@ -19,13 +18,15 @@ df.index = np.arange(1, len(df) + 1)
 # 高德地图web API正地理编码查询
 key = '0b8fa63575fef96b50e752c13241852b'
 base = 'https://restapi.amap.com/v3/geocode/geo'
+# 测试1
+parameters = {'address': '故宫博物院', 'key': key, 'city':'北京'}
+test = requests.get(base, parameters)
+json_test = json.loads(test.text)
+json_test
+loc_test = json_test['geocodes'][0]['location']
+print(loc_test)
 
-#parameters = {'address': '后海', 'key': key, 'city':'北京'}
-#test = requests.get(base, parameters)
-#json_test = json.loads(test.text)
-#loc_test = json_test['geocodes'][0]['location']
-#print(loc_test)
-
+# 批量查询
 location_list = []
 
 for i in loc_list:
@@ -41,5 +42,32 @@ for i in loc_list:
 df['geocodes_location']= location_list
 df.to_csv('raw.csv')
 
-df.set_index('location_name')
+# 删除没有坐标的题目 + 添加缺失值
+df = pd.read_csv('raw.csv')
+df.set_index('location_name', inplace=True)
+df.drop(['人儿','油画','剪贴','彩墨','邮','缘','东陵','怀仁堂','献花','西市'], axis=0, inplace=True)
+df.drop(labels='Unnamed: 0', axis=1, inplace=True)
+df.at['故宫','geocodes_location']='116.397026,39.918058' #故宫博物院
+df.at['象来街','geocodes_location']='116.365138,39.899030' #象来街招待所
+# df.to_csv('cleaned.csv')
 
+# 分开经纬度放入独立行
+l = df['geocodes_location'].values.tolist()
+
+# - 测试
+coords = '116.350808,39.906608'
+x = coords.split(",")
+print(x[1])
+
+# - 循环
+x_list = []
+y_list = []
+for i in l:
+    x = i.split(',')[0]
+    y = i.split(',')[1]
+    x_list.append(x)
+    y_list.append(y)
+
+df['x'] = x_list
+df['y'] = y_list
+df.to_csv('cleaned_with_xy.csv')
