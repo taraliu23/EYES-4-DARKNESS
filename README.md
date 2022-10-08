@@ -8,7 +8,7 @@ This is a project in memory of a Chinese peot, 顾城(Gu Cheng), which is named 
 
 ## Note
 
-I declare NO interest to his love affarir, relationship, and homicide! It is his poems, and poems only that make me nostalgic and mourn his in this way.
+I declare NO interest to his love affarir, relationship, and homicide! It is his poems, and poems only that make me nostalgic and mourn him in this way.
 
 ## Reference
 
