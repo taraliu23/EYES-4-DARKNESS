@@ -16,31 +16,25 @@ df = pd.DataFrame(loc_list, columns=['location_name'])
 df.index = np.arange(1, len(df) + 1)
 
 # 高德地图web API正地理编码查询
-key = '0b8fa63575fef96b50e752c13241852b'
-base = 'https://restapi.amap.com/v3/geocode/geo'
-# 测试1
-parameters = {'address': '故宫博物院', 'key': key, 'city':'北京'}
-test = requests.get(base, parameters)
-json_test = json.loads(test.text)
-json_test
-loc_test = json_test['geocodes'][0]['location']
-print(loc_test)
+def geocode():
+    # 高德地图web API正地理编码查询
+    key = '' # 在这里填写高德Web服务API KEY
+    base = 'https://restapi.amap.com/v3/geocode/geo'
+    location_list = []
+    for i in loc_list:
+        para = {'address': i, 'key': key, 'city':'北京'}
+        try:
+            reqs = requests.get(base, para)
+            json_info = json.loads(reqs.text)
+            loc = json_info['geocodes'][0]['location']
+            location_list.append(loc)
+        except:
+            location_list.append('null')
+    df['geocodes_location']= location_list
+    df.to_csv('raw.csv')
+    return 'raw.csv'
 
-# 批量查询
-location_list = []
-
-for i in loc_list:
-    para = {'address': i, 'key': key, 'city':'北京'}
-    try:
-        reqs = requests.get(base, para)
-        json_info = json.loads(reqs.text)
-        loc = json_info['geocodes'][0]['location']
-        location_list.append(loc)
-    except:
-        location_list.append('null')
-
-df['geocodes_location']= location_list
-df.to_csv('raw.csv')
+geocode()
 
 # 删除没有坐标的题目 + 添加缺失值
 df = pd.read_csv('raw.csv')
@@ -54,20 +48,21 @@ df.at['象来街','geocodes_location']='116.365138,39.899030' #象来街招待�
 # 分开经纬度放入独立行
 l = df['geocodes_location'].values.tolist()
 
-# - 测试
-coords = '116.350808,39.906608'
-x = coords.split(",")
-print(x[1])
+def split_coords():
+    x_list = []
+    y_list = []
+    for i in l:
+        x = i.split(',')[0]
+        y = i.split(',')[1]
+        x_list.append(x)
+        y_list.append(y)
+        df['x'] = x_list
+        df['y'] = y_list
+        df.to_csv('cleaned_with_xy.csv')
+    return 'cleaned_with_xy.csv'
 
-# - 循环
-x_list = []
-y_list = []
-for i in l:
-    x = i.split(',')[0]
-    y = i.split(',')[1]
-    x_list.append(x)
-    y_list.append(y)
+split_coords()
 
-df['x'] = x_list
-df['y'] = y_list
-df.to_csv('cleaned_with_xy.csv')
+# 计划出行路线
+other_loc = {'name':['北京大学人民医院白塔寺院区','什刹海街道政务服务中心','地安门桥','帽儿胡同'], 'loc':['116.366224,39.924753','116.380275,39.93399'], 'note':['出生地','工作地']}
+odf = pd.DataFrame(other_loc)
