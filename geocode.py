@@ -56,9 +56,9 @@ def split_coords():
         y = i.split(',')[1]
         x_list.append(x)
         y_list.append(y)
-        df['x'] = x_list
-        df['y'] = y_list
-        df.to_csv('cleaned_with_xy.csv')
+    df['x'] = x_list
+    df['y'] = y_list
+    df.to_csv('cleaned_with_xy.csv')
     return 'cleaned_with_xy.csv'
 
 split_coords()
