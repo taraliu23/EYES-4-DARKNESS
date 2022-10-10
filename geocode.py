@@ -47,6 +47,8 @@ df.at['象来街','geocodes_location']='116.365138,39.899030' #象来街招待�
 
 # 分开经纬度放入独立行
 l = df['geocodes_location'].values.tolist()
+# l = df['geocodes_location'].fillna('0,0').values.tolist() 
+# 考虑到可以将空缺值坐标改为0,0方便删除，但上文已经手动删除空缺值了。
 
 def split_coords():
     x_list = []
