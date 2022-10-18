@@ -20,7 +20,7 @@ Because of its simplicity with powerful contrast, rhyme, and atmosphere, it was 
 #### Data sources and description
 
 #### Analysis techniques used:
-- Python - Pandas, Requests, Json, re
+- Python - Pandas, Requests, Json, Re
 - QGIS - Add delimited text layer, Mean Coordinates
 
 #### Analysis results with printed maps
