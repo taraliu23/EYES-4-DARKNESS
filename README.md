@@ -1,4 +1,4 @@
-## 1. Intro
+## 0. Intro
 This is a project in memory of a Chinese poet, 顾城([Gu Cheng](https://en.wikipedia.org/wiki/Gu_Cheng)), which is named after his most known poem:
 
 >***一代人***
@@ -13,6 +13,20 @@ This poem uses metaphor to suggest that a certain generation of people suffering
 
 Because of its simplicity with powerful contrast, rhyme, and atmosphere, it was widely considered a masterpiece in Chinese modern poetry.
 
+## 1. Overview - TO BE FINISHED!!
+
+#### Problem description: 
+
+#### Data sources and description
+
+#### Analysis techniques used:
+- Python - Pandas, Requests, Json, re
+- QGIS - Add delimited text layer, Mean Coordinates
+
+#### Analysis results with printed maps
+
+#### Discussion of the significance of the results
+
 ## 2. Mapping
 In 1991-1993, Gu Cheng wrote an unfinished set of 52 poems, 城(the City), to recall the place in **Beijing** where he grow up with deep attachment and memory.
 
@@ -20,7 +34,7 @@ Through the power of his strong imagination, Gu Cheng can walk around Beijing ev
 
 42 poems in this poem set are named after a place in Beijing, for example, 故宫(the Palace Museum), so I use Gaode Map Web API to geocode them and locate them into a map in QGIS **(by Add delimited text layer tool, with the '1991_1993.csv' as input)** to visualize and find patterns.
 
-This is the geocode map in Chinese,
+This is the geocode map in Chinese.
 ![geocode_english](assets/geocoding_poem_place.png)
 
 This is the geocode map in English.
