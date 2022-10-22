@@ -13,19 +13,29 @@ This poem uses metaphor to suggest that a certain generation of people suffering
 
 Because of its simplicity with powerful contrast, rhyme, and atmosphere, it was widely considered a masterpiece in Chinese modern poetry.
 
-## 1. Overview - TO BE FINISHED!!
+## 1. Overview 
 
-#### Problem description: 
+#### Aim
+Perceive a poem set by Gu Cheng in a geographical way.
+Combine coding skills with interest in poetry.
+Show my art manifesto that poet encrypes the reality in a dreamy way.
 
 #### Data sources and description
+Text data: from the second part of《顾城诗全集》(Collected Works of Gu Cheng), page 832.
 
-#### Analysis techniques used:
-- Python - Pandas, Requests, Json, Re
-- QGIS - Add delimited text layer, Mean Coordinates
+#### Techniques used
+Python - Pandas, Requests(with Gaode Map Web API), Json, Re.
+QGIS - Add delimited text layer, Mean Coordinates
 
-#### Analysis results with printed maps
+#### Results
+- 3 patterns in the distribution of locations mentioned in the poem set: even, symmetry, shrinking in range.
+- Most mentioned place type is bridge.
+- Coincidence: the mean coordinate's location is a NGO for children's benefits.
 
-#### Discussion of the significance of the results
+#### Discussion of the significance
+
+
+
 
 ## 2. Mapping
 In 1991-1993, Gu Cheng wrote an unfinished set of 52 poems, 城(the City), to recall the place in **Beijing** where he grow up with deep attachment and memory.
@@ -42,13 +52,13 @@ This is the geocode map in English.
 ![geocode](assets/geocoding_in_english.png)
 
 ## 3. Patterns found
-####Here are patterns I found according to the map:
+Here are patterns I found according to the map:
 
 1. **EVEN**
 Places in his poems have a relatively even distribution inside Beijing Second Ring Road, with is known as the "old city part". 
 
 2. **TWO-SIDES**
-Place in poems written in 1991 and 1992 mainly distributed in the west and east sides of Beijing respectively.
+Place in poems written in 1991 and 1992 mainly distributed in the west and east sides of Beijing in a symmetry way, seperated by the 中轴线(the old city axis).
 
 3. **SHRINKING**
 Place range shrank regularly from 1991 to 1993, and four places mentioned in 1993 are all in the "old city part".
