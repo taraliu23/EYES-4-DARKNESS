@@ -28,14 +28,9 @@ Python - Pandas, Requests(with Gaode Map Web API), Json, Re.
 QGIS - Add delimited text layer, Mean Coordinates
 
 #### Results
-- 3 patterns in the distribution of locations mentioned in the poem set: even, symmetry, shrinking in range.
-- Most mentioned place type is bridge.
-- Coincidence: the mean coordinate's location is a NGO for children's benefits.
-
-#### Discussion of the significance
-
-
-
+1. Find 3 patterns in the distribution of locations mentioned in the poem set: even, symmetry, shrinking in range.
+2. Most mentioned place type is bridge.
+3. Coincidence: the mean coordinate's location is a NGO for children's benefits.
 
 ## 2. Mapping
 In 1991-1993, Gu Cheng wrote an unfinished set of 52 poems, 城(the City), to recall the place in **Beijing** where he grow up with deep attachment and memory.
