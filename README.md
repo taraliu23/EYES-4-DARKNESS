@@ -10,7 +10,7 @@ This is a project in memory of a Chinese poet, 顾城([Gu Cheng](https://en.wiki
 >*Dark night endowed me with eyes for darkness,*
 >*yet with them I seek light*
 
-This poem uses metaphor to suggest that a certain generation of people suffering in a darkened age still yearn and search for light, hope, and beauteous things. Because of its simplicity with powerful contrast, rhyme, and atmosphere, it was widely considered a masterpiece in Chinese modern poetry.
+This poem uses metaphor to suggest that a particular generation of people suffering in a darkened age still yearn and search for light, hope, and beauteous things. Because of its simplicity, powerful contrast, rhyme, and atmosphere was widely considered a masterpiece in modern Chinese poetry.
 
 ## 1. Overview 
 
