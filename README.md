@@ -1,4 +1,4 @@
-[PREVIEW IN MY PERSONAL WEBSITE https://drunkenboat-darkdomain.github.io/projects/proj-2)
+[PREVIEW IN MY PERSONAL WEBSITE](https://drunkenboat-darkdomain.github.io/projects/proj-2)
 
 This is a project in memory of a Chinese poet, 顾城([Gu Cheng](https://en.wikipedia.org/wiki/Gu_Cheng)), which is named after his most known poem:
 
