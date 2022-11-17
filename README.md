@@ -2,11 +2,11 @@
 
 This is a project in memory of a Chinese poet, 顾城([Gu Cheng](https://en.wikipedia.org/wiki/Gu_Cheng)), which is named after his most known poem:
 
->***一代人***
+>***一代人: ***
 >*黑夜给了我黑色的眼睛*
 >*我却用它寻找光明*
 >
->***One Generation***
+>***One Generation: ***
 >*Dark night endowed me with eyes for darkness,*
 >*yet with them I seek light*
 
