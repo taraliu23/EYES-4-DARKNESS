@@ -1,4 +1,5 @@
-## 0. Intro
+[PREVIEW IN MY PERSONAL WEBSITE https://drunkenboat-darkdomain.github.io/projects/proj-2)
+
 This is a project in memory of a Chinese poet, 顾城([Gu Cheng](https://en.wikipedia.org/wiki/Gu_Cheng)), which is named after his most known poem:
 
 >***一代人***
@@ -9,9 +10,7 @@ This is a project in memory of a Chinese poet, 顾城([Gu Cheng](https://en.wiki
 >*Dark night endowed me with eyes for darkness,*
 >*yet with them I seek light*
 
-This poem uses metaphor to suggest that a certain generation of people suffering in a darkened age still yearn and search for light, hope, and beauteous things.
-
-Because of its simplicity with powerful contrast, rhyme, and atmosphere, it was widely considered a masterpiece in Chinese modern poetry.
+This poem uses metaphor to suggest that a certain generation of people suffering in a darkened age still yearn and search for light, hope, and beauteous things. Because of its simplicity with powerful contrast, rhyme, and atmosphere, it was widely considered a masterpiece in Chinese modern poetry.
 
 ## 1. Overview 
 
