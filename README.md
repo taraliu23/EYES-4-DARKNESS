@@ -24,6 +24,7 @@ Text data: from the second part of《顾城诗全集》(Collected Works of Gu Ch
 
 #### Techniques used
 Python - Pandas, Requests(with Gaode Map Web API), Json, Re.
+
 QGIS - Add delimited text layer, Mean Coordinates
 
 #### Results
