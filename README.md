@@ -16,7 +16,9 @@ This poem uses metaphor to suggest that a particular generation of people suffer
 
 #### Aim
 Perceive a poem set by Gu Cheng in a geographical way.
+
 Combine coding skills with interest in poetry.
+
 Show my art manifesto that poet encrypes the reality in a dreamy way.
 
 #### Data sources and description
